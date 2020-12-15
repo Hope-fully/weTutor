@@ -8,17 +8,23 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { ContentComponent } from './content/content.component';
 
+
+import { HttpClientModule } from '@angular/common/http';
+import { TableComponent } from './table/table.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
     HomeComponent,
     LoginComponent,
-    ContentComponent
+    ContentComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
