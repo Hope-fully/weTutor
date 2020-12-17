@@ -1,20 +1,111 @@
 
-<table class="table table-warning table-striped">
-    <thead>
+<!DOCTYPE html>
+<html>
+<head>
+      <title>
+        List Page
+      </title>
+
+      <style>
+
+
+          h1{
+              color:aliceblue;
+              text-align: center;
+            }
+
+
+
+          table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+          }
+
+          .taffle
+          {
+              text-align: center;
+              margin-right: auto;
+              margin-left: auto;
+              margin-top: 100px;
+
+          }
+
+          .inline{
+
+            text-align: center;
+        
+
+          }
+          
+      </style>
+
+</head>
+
+
+
+
+<body>
+
+
+  <h1>Registered Students </h1>
+
+  
+
+  <hr>
+
+          <nav class="inline">
+            <ul>
+                
+          
+
+                    &nbsp;
+                    <li><a routerLink="/home" routerLinkActive=
+                        "">Logout</a></li>
+            </ul>
+
+
+        </nav>
+
+
+  
+
+
+
+  <hr>
+
+<table class="taffle" width="50%">
+    <!-- <thead> -->
       <tr>
-        <th scope="col">#</th>
-        <th scope="col">First</th>
-        <th scope="col">Last</th>
-        <th scope="col">Handle</th>
+       
+        <th scope="col">Student Number</th>
+        <th scope="col">Fisrt Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Subject</th>
+        <th scope="col">Username</th>
+        <th scope="col">Password</th>
+        <!-- <th scope="col">Time Created</th> -->
       </tr>
-    </thead>
+
+    <!-- </thead> -->
     <tbody>
       <tr *ngFor="let user of users">
-        <th scope="row">1</th>
-        <td>{{user.studentNo}}</td>
-        <td>{{user.surname}}</td>
+        
+        <td>{{user.studentno}}</td>
         <td>{{user.fname}}</td>
+        <td>{{user.surname}}</td>
+        <td>{{user.subject}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.password}}</td> 
+         <!-- <td>{{user.created_at}}</td> -->
       </tr>
      
     </tbody>
   </table>
+
+
+
+
+
+ 
+</body>
+</html>
